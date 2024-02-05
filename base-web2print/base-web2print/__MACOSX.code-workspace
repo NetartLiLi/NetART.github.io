@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../__MACOSX"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "base-web2print"
+	}
+}

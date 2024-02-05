@@ -1,0 +1,187 @@
+/* variables */
+:root{
+    --mavar: red;
+    --paged-layout: booklet;
+    /* ou booklet 5-16 pour imposer seulement une portion */
+}
+
+/* Gabaris des pages */  
+@media print{
+    /* gabaris général (affecté par défaut) */
+    @page{
+        size: 138mm 200mm; /* format */
+        bleed: 5mm; /* fond perdu */
+        marks: crop; /* traits de coupe */
+        /**/
+        margin-top: 10mm; /* blanc de tête */
+        margin-bottom: 15mm; /* blanc de pieds */
+        /**/
+        @bottom-center{
+            content: counter(page);
+            font-family:"Fatal";
+            color: rgb(255, 0, 0);
+        }
+    }
+    /* gabaris général : page de gauche */
+    @page:left{
+        margin-right: 10mm; /* petit fond */
+        margin-left: 15mm; /* grand fond */
+    }
+    /* gabaris général : page de droite */
+    @page:right{
+        margin-right: 15mm; /* grand fond */
+        margin-left: 10mm; /* petit fond */
+    }
+
+    /* gabaris spécifiques */
+    @page couverture{
+        margin-top: 10mm; /* blanc de tête */
+        margin-right: 10mm; /* grand fond */
+        margin-bottom: 10mm; /* blanc de pieds */
+        margin-left: 10mm; /* petit fond */
+        background-image: url(images\fondd.jpg);
+        @bottom-center{
+            content: none;
+        }
+    }
+
+    /* gabaris général : pages blanches */
+    @page:blank{ 
+        @bottom-center{
+            content: none;
+            color: rgb(255, 255, 174);
+        }
+    }
+}
+
+@font-face {
+    font-family:"Fatal";
+    src: url(fonts\Gulax-Regular.otf)format(opentype);
+    font-style: initial;
+}
+@font-face {
+    font-family:"Stardust";
+    src: url(fonts\Starcruiser-oLpV.ttf)format(opentype);
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"Queen" ;
+    src: url(fonts\ParisVanJava-515OB.ttf) format(opentype);
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Paris Italie" ;
+    src: url(fonts\ParisvanjavaBoldItalic-qZMY2.ttf) format(opentype);
+    font-style: normal;
+}
+@font-face {
+    font-family:"Paris" ;
+    src: url(fonts\ParisVanJavaItalic-6Y5xg.ttf) format(opentype);
+    font-style: normal;
+}
+@font-face {
+    font-family:"corse" ;
+    src: url(fonts\QueensidesLight-ZVj3l.ttf) format(opentype);
+    font-style: normal;
+}
+/* Styles */
+
+section .changepage{
+
+    page-break-after: always;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover{
+    page: couverture; /* gabaris à appliquer (si pas celui par défaut) */
+    break-after: recto; /* insérer une page blanche si nécessaire et commencer sur une page recto */
+    
+}
+
+.cover h1{
+    font-family:"Stardust";
+    font-size: 30px;
+    color: white;
+    
+    
+}
+.cover h2{
+    font-family:"Fatal";
+    line-height: 112px;
+    font-size: 110px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 0);
+    
+    
+}
+
+.fin{
+    page:fin;
+    break-after: recto;
+}
+.conclusion{
+    page:conclusion;
+    break-after: verso;
+}
+
+section h3{
+    font-family:"Fatal";
+    font-size: 32pt;
+    margin-top: 13pt;
+    margin-bottom: 10pt;
+    font-display:center ;
+    background-image: url(images\fondd.jpg);
+    color: white;
+}
+section p{
+    font-family:"Queen";
+    font-size: 10pt;
+    line-height: 13pt;
+    margin-top: 10pt;
+}
+
+h4{
+    font-family:"Fatal";
+    font-size: 18pt;
+    line-height: 15pt;
+    margin-top: 13pt;
+    color: rgb(255, 0, 0);
+}
+
+h5{
+    font-family:"corse";
+    font-size: 9pt;
+    line-height: 13pt;
+    margin-top: 5pt;
+}
+h6{
+    font-family:"Paris Italie";
+    font-size: 13pt;
+    line-height: 5pt;
+    margin-top: 15pt;
+    margin-bottom: 5pt;
+    color: rgb(255, 0, 0);
+   
+
+}
+
+m{
+    font-family:"Paris";
+    font-size: 10pt;
+    line-height: 2pt;
+    margin-top: 15pt;
+    margin-bottom: 5pt;
+    
+
+}
+

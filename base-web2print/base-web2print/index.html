@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Paged.js</title>
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Typos -->
+    
+    <!-- Paged.js-->
+    <script src="pagedjs/paged.js"></script>
+    <script src="pagedjs/interface.js"></script>
+    <script src="pagedjs/reload-in-place.js"></script>
+    <script src="handlers.js"></script>
+    <script src="addons/csstree.min.js"></script> <!-- full page element dependancy -->
+    <script src="addons/full-page.js"></script> <!-- full page element -->
+    <script src="addons/elem-float-top.js"></script> <!-- remplir les vides laissés par les éléments .elem-float-top -->
+    <script src="addons/imposition.js"></script> <!-- générer une imposition si --paged-layout contient un valeur -->
+    <link rel="stylesheet" type="text/css" href="pagedjs/interface-header.css" />
+    <link rel="stylesheet" type="text/css" href="pagedjs/interface.css" />
+  </head>
+  <body class="interface-bar-bottom"> <!-- avoir la barre d'interface en bas du viewport -->
+
+    <!-- Interface -->
+    <header id="interface-header" w3-include-html="pagedjs/interface.html"></header>
+       
+    <!-- Raw book content -->
+    <template id="book-content">
+
+      <section class="cover">
+        <h1>Les</h1>
+        <h1>linguistes</h1>
+        <h1>atterrées</h1>
+
+        <h2>Le français
+
+        va très bien,
+
+        merci !</h2>
+       
+        
+      </section>
+      
+      <section>
+        <h4>Nous, linguistes, sommes proprement atterrées par l’ampleur de la diffusion d’idées fausses sur la langue française, par l’absence trop
+           courante, dans les programmes scolaires comme dans l’espace médiatique, de référence aux acquis les plus élémentaires de notre discipline. 
+           Les discours évaluatifs, quiindiquent ce qui serait « correct », saturent quasiment l’espaceéditorial
+           et médiatique contemporain, incitant à réduire touteréflexion sur la langue à la recherche simpliste des formes sansfaute.
+           Mais ce qui fait la différence entre une faute et une évolution, c’est la place qu’elle occupera à long terme
+           dans l’usage majoritaire, le vôtre, le nôtre, qui entérine le changement.Et l’usage, ça s’étudie avec minutie.</h4>
+
+        <p>L’accumulation de déclarations catastrophistes sur l’état actuel de notre langue a fini par empêcher de comprendre 
+           son immense vitalité, sa fascinante et perpétuelle faculté à s’adapter au changement, et même par empêcher de croire à son avenir !
+           Il y a urgence à y répondre.</p>
+      </section>
+      
+      <section>
+        <h3>Décrire ou prescrire ?</h3>
+        <p>La langue française est un sujet qui nous relie et nous divise. C’est le cas de toutes les langues du monde : la langue est un pouvoir. Maitriser la langue, c’est se faire entendre, avoir voix au chapitre. Mais les langues, si elles permettent d’écrire les lois, sont également soumises à des règles. 
+
+         Dès leur entrée à l’école, les francophones entretiennent un rapport ambigu à leur propre langue, entre amour et crainte, créativité et contrainte. Bien que des règles soient nécessaires pour se comprendre les uns les autres, elles ont en français un poids particulier : celui de la peur de la faute. Les questions qu’on apprend en premier à se poser sur la langue commencent souvent par « Est-ce que ça se dit ? Est-ce que c’est correct ? Est-ce que c’est français ? ».
+
+         Pourtant, la forme correcte d’aujourd’hui est souvent la faute d’hier. La plupart des évolutions de notre langue au fil de son histoire sont liées à des adaptations phonétiques, des écarts ou des assimilations. Nécessité faisant loi, les langues évoluent en tendant à une certaine économie ou en visant l’efficacité. Pour la plupart, les raccourcis empruntés par l’usage se sont implantés à une époque où l’idée même de norme n’était pas évidente. Pour ne citer qu’un exemple, le mot fromage vient du latin tardif formaticum. La forme correcte d’un point de vue étymologique est donc formage et non fromage. Ce sont les mêmes raisons de modification phonétique qui ont présidé à l’inversion du forma en froma qui font aujourd’hui prononcer parfois par mégarde infractus ou génicologue. En ce sens, on pourrait dire, sans trop tordre notre histoire que, finalement, le français actuel, c’est d’abord du latin tardif oral et régional avec des « fautes », ensuite du français ancien.
+
+         Les linguistes qui mènent des recherches sur le langage savent que la langue est en perpétuelle mutation. Ils l’observent comme les biologistes observent un être vivant, avec toute la rigueur que le souci d’objectivité leur impose. Ils ont élaboré des méthodes d’observation des usages, des contacts entre les langues, de la diffusion dans le temps et l’espace des traits de prononciation ou des néologismes (mots nouveaux), des méthodes expérimentales pour décrire et comprendre l’acquisition du langage par les enfants, les pathologies du langage, la fréquence de certaines tournures, les principes qui gouvernent les dialogues et interactions humaines, les rapports entre langues et cognition, etc. Le but de leurs recherches est de décrire et de comprendre.
+
+         On entend trop rarement dans les grands médias, par exemple : Non, la langue ne se réduit pas à l’orthographe et modifier cette dernière peut améliorer notre système d’écriture sans attenter à celle-ci ; les outils de communication modernes n’appauvrissent pas nécessairement la pensée et peuvent sous-tendre des formes d’expression nouvelles d’une grande richesse ; bien qu’ils répondent à une certaine mode, les anglicismes ou autres emprunts ne mettent pas notre langue en danger ; personne ne « déforme » la langue française ; tout le monde a un accent, y compris à Paris ; le participe passé avec l’auxiliaire avoir tend à devenir invariable en français contemporain, et tant d’autres choses encore que les scientifiques de la langue ont mis au jour.
+
+         On entend en revanche souvent, sans discours contradictoire, des contrevérités ou des pseudo-théories sur la langue qui n’ont comme fondement que l’intuition de celles et ceux qui les énoncent ou les répètent, sans qu’aucun travail d’investigation ne vienne les étayer. Le grand public connait surtoutles discours puristes et la norme scolaire en partie arbitraire ;il est temps de rendre la recherche plus accessible.
+
+         Ce manifeste entend rassembler ce qui fait consensusdans la communauté scientifique. Nous appelons à nuancerles discours omniprésents qui prennent les grammaires etles dictionnaires pour des tables de lois immuables, gravéesdans le marbre.</p>
+
+       <h3>1. Le français n’est plus la   
+        « langue de Molière »</h3>
+       <p>Idée reçue – Le français classique avait atteint la perfection auxviie siècle, et depuis il ne fait que décliner.
+
+         Citation – « Aussi belle soit-elle, la langue de Molière est souvent chahutée par les Français. Les fautes d’orthographe ou de grammairesont fréquentes. » Article sur BFMTV.com, 11 mai 2016
+        
+         Aujourd’hui, il est encore courant d’entendre qu’on « écorche la langue de Molière ». Heureusement que cen’est pas le cas ! La langue de Molière est datée historiquement, elle est enclose dans ses pièces, et n’est plus guère écorchable.</p>
+        <h4>La langue a changé</h4>
+        <p>Cette expression commode, « langue de Molière », comporte un grave inconvénient. Elle laisse entendre que Molièreécrivait la même langue qu’aujourd’hui. Or, c’est loin d’êtrele cas. Les pièces de Molière ont en moyenne 350 ans d’âge.Beaucoup de mots doivent être expliqués, et pas seulement les savoureux jocrisse (« niais » ; Les Femmes savantes) ou pimpesouée (« femme maniérée » ; Le Bourgeois gentilhomme). Hymen pour « mariage » ne s’emploie plus. Mais cela touche aussi le vocabulaire resté courant. Les verbes connaitre, penser, intéresser, n’avaient pas exactement le même sens qu’aujourd’hui. « J’ai pensé vomir » (L’École des femmes) signifie« j’ai failli vomir », par exemple. Transport signifiait « vive émotion » et alarme « état de trouble ».
+
+          La grammaire a aussi changé. Il faut comprendre que, non, il n’y a pas de faute dans « je vous le demande avec larmes » (Dom Juan), car le nom pouvait encore s’employer sans article. Le relatif dont pouvait être employé de façon très libre : « je cède facilement à cette douce violence dont elle nous entraîne » (« avec laquelle » ; Dom Juan). Est-ce que par hasard Molière n’écorcherait pas… la langue de Molière ?
+        </p>
+        <h4>Traduire Molière ?</h4>
+        <p>Depuis une vingtaine d’années, plusieurs propositions ont été faites de traduire Molière en français contemporain.C’est un signe. Cela avait déjà été fait pour Montaigne,né un siècle avant, et, il est vrai, beaucoup plus difficile àlire. Mais Molière ? Cela a soulevé des protestations, caron touchait au symbole. Pour certains, traduire Molière enfrançais contemporain, ce serait pour ainsi dire traduire dubon français en mauvais français.
+
+          En tenant ce type de discours, on entretient une illusion,on fossilise l’image qu’on donne du français. Car on ne litpas Molière dans la graphie d’origine ! Si on le faisait, ondécouvrirait des signes étranges pour nous, comme le tildeau-dessus de la voyelle pour indiquer qu’elle est nasale : nous voyõs. Moi s’écrivait moy et français françois, prononcé fransoué. Eh oui, la prononciation aussi a changé. Il suffit pours’en convaincre d’écouter les lectures reconstituées par BenjaminLazar sur Youtube. La fameuse « langue de Molière » y apparait presque comme une langue étrangère.</p>
+        <h4>Molière n’était pas un puriste</h4>
+        <p>Molière n’est d’ailleurs pas un bon candidat, pour représenterle « français classique ». Il est venu trop tôt. À son époque, les grammairiens se battaient encore pour savoir quel mot, quelle construction accepter.
+
+          S’appuyer sur Molière pour défendre une vision puriste de la langue est donc paradoxal – lui qui a truffé ses pièces de « patois », de « jargons », lui qui a adoré triturer la langue, allant même jusqu’à des inventions délirantes (qu’on pense à la cérémonie du Mamamouchi du Bourgeois gentilhomme, ou à la fin du Malade imaginaire). En 2016, le voilà qui s’estretrouvé de plus associé à une « clause » prétendant imposer l’usage du français dans les appels d’offres de marchéspublics nationaux, la trop fameuse « clause Molière », heureusement rejetée par le Sénat en 2017, et disparue semble t-il des débats.</p>
+        <h4>le français évolue comme toutes les langues</h4>
+        <p>Depuis les Serments de Strasbourg, au IXe siècle, époque de naissance de l’ancien français par rapport au latin, la langue n’a cessé d’évoluer et nous ne reviendrons jamais à la langue de Molière. C’est le XVIIe siècle qui s’est plu à construire cette fausse image d’une fixité, d’une pérennité du français à travers les siècles. On croyait au « génie de la langue », une représentation confuse et indémontrable de son identité. Le XIXe siècle, et même le XXe, a parfois continué à s’accrocher aux anciens mythes, pour des raisons souvent politiques, ou par nostalgie d’un âge qu’on sentait s’éloigner.
+
+          Les changements continueront, car le français de 2023 n’est déjà plus celui de 2000. Des « fautes » d’aujourd’hui deviendront sans doute la norme en 2050. Molière utilisait est-ce que, mais il était impensable alors de dire « Est-ce qu’il pleuvra demain ? ». Est-ce que n’interrogeait, en effet, que sur un fait connu (« est-ce bien le cas que… » ?). Il en sera toujours ainsi : on observe à chaque moment de l’histoire une coexistence de diverses manières de dire, du fait de la diversité des usages, des phénomènes de modes, des contacts de langues, de la pression à la régularisation de certaines exceptions, des besoins d’innovations… et à un moment une variante s’impose (plus ou moins) par rapport aux autres.</p>
+        <h4>Étudier la langue de Molière plutôt que de l’invoquer !</h4>
+        <p>Il est impératif de renforcer la culture linguistique dans l’enseignement secondaire français. Il vaudrait mieux faire découvrir la langue de Molière comme une langue différente. Ne pas se contenter de traduire en français moderne les mots d’« ancien français » des textes qu’on fait lire, mais faire comprendre que chaque époque (comme chaque langue) a ses manières de dire. On accèderait plus facilement à toute sa richesse, car c’est en abordant sa propre langue comme une langue étrangère qu’on saisit son fonctionnement et qu’on entre véritablement dans ce qu’elle a à nous dire.</p>
+        <h4>Et si ?</h4>
+        <p>Et si on enseignait des éléments d’histoire de la langue dès le collège ? Si on montrait les textes de Molière en graphie de l’époque ? Si on faisait écouter des enregistrements enprononciation restituée ? Si même on s’y entrainait </p>
+        
+        <h4>Ressources</h4>
+        <h5>- Alain Rey, Frédéric Duval et Gilles Siouffi, Mille ans de langue française : histoire d’une passion, Perrin, 2007. Version abrégée parue dans lacollection « Tempus (poche) » en 2011.</h5>
+        <h5>- Frédéric Duval, Jacques Dürrenmatt, Jean Pruvost, Gilles Siouffi et Agnès Steuckardt, Chronologie de l’histoire de la langue française, Bescherelle/Hatier, 2022.</h5>
+        <h5>- Nathalie Fournier, Grammaire du français classique, Belin, 1998.</h5>
+        <h5>- Base de textes littéraires numérisés depuis le Moyen Âge : www.frantext.fr.</h5>
+
+        <h3>2. Le français n’appartient pas à la France</h3>
+        <p>Idées reçues – Le français est la langue des Français. Tout lemonde en France parle français.
+
+          Citation – « L’invasion de l’e muet nous est arrivée du Québec, contaminée par les revendications des ligues féministes des États-Unis. Une affaire de Huronnes. J’ai une profonde affection pour les Québécois. Mais ce n’est pas chez eux que j’irai prendre des leçons de langage. Ils ont emporté outre-Atlantique le parler patoisant du Poitou du début du XVIIe siècle, avant Vaugelas et Voiture, avant Boileau, avant Racine. » Maurice Druon, Le Figaro, 29 décembre 2005.
+          
+          Le français s’est d’abord constitué et transmis en Europe, sur le territoire de l’actuelle France hexagonale, Wallonie et Suisse romande. Mais du fait de la colonisation et de la diaspora européenne, le français a ensuite été exporté et/ou imposé dans des territoires éloignés par la géographie et la culture : dans tout le Maghreb et une bonne part de l’Afrique subsaharienne, des Antilles au Québec et à Terre-Neuve, de Madagascar à Pondichéry… On estime à présent que plus de 300 millions d’humains ont le français en partage à des degrés divers : la plupart sont plurilingues, certains n’emploient cette langue que dans une partie de leurs activités, d’autres l’emploient en tout temps et en tout lieu ; certains et certaines l’ont appris dans leur famille, d’autres à l’école ou au travail, sur le tas. Pour des raisons historiques, le français fait partie des dix langues les plus présentes sur Internet, et des cinq langues les plus parlées, si l’on prend en compte toutes les personnes qui l’emploient à des niveaux différents de maitrise : cela lui donne un poids énorme au niveau mondial. L’avenir du français comme langue planétaire se joue en Afrique, où se trouve actuellement la plus grande ville francophone du monde : Kinshasa, 17 millions d’habitants, en République démocratique du Congo.</p>
+        
+        <h4>Le français n’existe pas</h4>
+        <p>Le français n’a jamais été homogène. Le standard unique est un mythe. Les linguistes décrivent la variété des prononciations, des répertoires lexicaux (vocabulaire) et des tournures grammaticales, mais il est impossible de compter les variétés du français car elles sont imbriquées. Les entités géographiques ne traduisent pas toujours des frontières linguistiques. On trouve je vais en concurrence avec je vas en français québécois et acadien, mais ils sontaient (ils étaient) est plus fréquent en français acadien. 
+
+          L’hétérogénéité du français vient des contextes divers de son emploi et des nombreuses langues avec lesquelles il entre en contact. Pourtant, quand on l’enseigne comme langue étrangère, on enseigne UN français artificiellement épuré. Cela suppose de se mettre d’accord, à plus de 300 millions, pour enseigner par exemple j’appris, le passé simple, mais pas j’ai eu appris, le passé surcomposé ; quatre-vingts-dix mais pas nonante ; parfum prononcé avec le in parisien et non avec le un lorrain, toulousain, québécois…</p>
+        
+          <h4>Francophonie du Nord</h4>
+        <p>Dans les pays dits du Nord (Belgique, Canada, France,Suisse), il y a de vraies tensions autour de la notion de français de référence ; ces pays se dotent d’instances officielles de régulation du français (voir ci-dessous, point 4) et revendiquent la reconnaissance de leurs apports au français « courant, commun » ; les dictionnaires établis à Paris se font de plus en plus accueillants, même si les mots qui ne sont pas employés en région parisienne continuent à être affublés de l’étiquette « régionalisme », ce qui n’est pas le cas pour les régionalismes parisiens. Les tensions prennent parfois la forme de guerres commerciales, comme l’embargo que la France refuse toujours de lever, depuis la Deuxième Guerre mondiale, sur toute diffusion vers l’Europe des films en version française (doublage) réalisés au Québec.</p>
+        
+        <h4>Francophonie des Suds</h4>
+        <p>Durant la colonisation, notamment en Afrique, le français était la langue des colons mais aussi la langue des élites, de l’émancipation, de la modernité, la langue convoitée à laquelle les « Indigènes » n’avaient quasiment pas accès. Cette ambivalence, conservée par les élites nationalistes après l’indépendance, a laissé des traces encore observables dans les pays de l’ancien Empire colonial français. Certains ont donné le statut de langue officielle au français, d’autres non, mais ont préservé sa transmission scolaire et familiale. La politique d’entrave à l’éducation des « Indigènes » menée par la France coloniale a durablement marqué les mémoires : le spectre des moqueries visant le français petit nègre du « y’a bon Banania » est toujours là. Cela empêche encore les francophones des Suds de revendiquer leurs normes locales. On y observe une insécurité linguistique particulièrement forte qui les pousse à un conservatisme linguistique exacerbé et à l’autostigmatisation de leurs créations néologiques ou de l’ « accent africain ».
+        </p>
+        
+        <h4>Les français, des francophones comme les autres</h4>
+        <p>Pendant un moment, on a séparé littérature française et littérature francophone, comme s’il existait une hiérarchie ; comme si on pouvait rassembler toute la littérature d’expression française sauf celle produite en France, car celle-ci devait jouir d’une légitimité différente. Cette division ne tient plus. Le temps est venu que les Français appliquent à la francophonie le multilatéralisme qu’ils défendent, car les pressions entre les différentes légitimités augmentent comme dans une cocotte-minute. 
+
+          Inversement, il est temps de reconnaitre qu’en France aussi, des dizaines de langues coexistent : en 1999, le rapport Cerquiglini en comptait 75, l’alsacien, le basque, le breton, le catalan, le corse, l’occitan, les créoles mais aussi les langues parlées en Guyane et en Nouvelle-Calédonie… Même si le français y tient une place centrale, la France est un pays plurilingue, comme les autres pays francophones. Malheureusement, la formulation actuelle de l’article 2 de sa Constitution, adopté en 1992, qui stipule « La langue de la République est le français » l’empêche de ratifier la Charte européenne des langues régionales.</p>
+        
+       <h4>Et si ?</h4>
+        <p>Et si on favorisait partout l’éducation plurilingue, l’éveil aux langues, l’éducation à l’intercompréhension des langues romanes et des différentes variétés de français pour sortir progressivement de la culture de la norme unique forgée par Paris ? Et si on révisait la Constitution française pourque la France ratifie et applique la Charte européenne sur les langues régionales ?</p>
+        
+        <h4>Ressources</h4>
+        <h5>- Anne Abeillé, Danièle Godard (dir.), La Grande Grammaire du français, Introduction : Qu’est-ce que le français ?, Actes Sud/Imprimerie nationale éd., 2021.</h5>
+          <h5> - Michel Candelier (dir.), Le CARAP - Un Cadre de Référence pour les Approches plurielles des Langues et des Cultures – Compétences et ressources, Strasbourg, Conseil de l’Europe, 2012 [en ligne].</h5>
+          <h5>- Bernard Cerquiglini, Les Langues de France : rapport au ministre de l’Éducation nationale, de la recherche et de la technologie et à la ministre de la culture et de la communication, 1999.</h5>
+          <h5>- Marty Laforest. 2021, États d’âme, états de langue ; essai sur le français parlé au Canada, Presses de l’Université de Montréal, 2021.</h5>
+          <h5>- Michel Launey, La République et les langues, Raisons d’agir, 2023.</h5>
+          <h5>- France Martineau, Wim Remysen, André Thibault, Le Français au Québec et en Amérique du Nord, Ophrys, 2022.</h5>
+          <h5>- Cécile Van den Avenne, De la bouche même des indigènes, Éditions Vendemiaire, 2017.</h5>
+          <h5>- Baromètre Calvet du poids des langues [en ligne sur le site www.culture.gouv.fr].</h5>
+
+
+    <div clas="changepage"></div>
+      <h3>3. Le français n’est pas «envahi» par l’anglais</h3>
+       <p>Idées reçues – Le français est menacé par l’anglais. Emprunter un mot, c’est appauvrir sa langue.
+
+        Citation – « La langue française […] est exposée au risque de s’effondrer en français pourri, en une sorte de dialecte de l’empire anglo-saxon. » Alain Borer, Speak White, Tracts Gallimard, 2021.
+        
+        Spam, spoileur, dating, asap, lol ! Régulièrement, on entend, dans les médias, les puristes se plaindre de ce qu’ils appellent les anglicismes : notre langue serait envahie, menacée, abimée par un usage excessif de l’anglais, ou de ce que certains considèrent comme un mauvais anglais (le « globish ») et un mauvais français (le « franglais »). Le nombre inquiétant d’emprunts à l’anglais serait le signe de la défaite, de la soumission, de la mise à mort prochaine du français.
+        
+        Les puristes emploient des mots qui font peur (invasion, menace), décrivant les échanges linguistiques en termes guerriers : il y aurait un vainqueur et un vaincu. Celles et ceux qui étudient la langue sans a priori seraient au mieux des moutons, au pire des collabos, qui précipitent la fin du français tel qu’il doit se parler. Les linguistes, au premier rang, devraient ne pas se contenter de décrire, mais prescrire, dire comment il faut parler et résister en français.</p>
+       <h4>Le franglais n’existe pas en Europe</h4>
+       <p>Le problème, c’est que les notions brandies par les puristes, dont le « franglais » condamné par René Étiemble en 1964, n’ont pas d’assise scientifique. On voit bien ce que veulent dire celles et ceux qui dénoncent le franglais, une sorte de mélange d’anglais et de français, perçu comme une monstruosité linguistique. Il existe parfois des langues qui se mélangent dans des conditions historiques particulières, créant des langues nouvelles ; ce sont les langues créoles, qui deviennent les langues maternelles des nouvelles générations, qui peuvent même devenir des langues officielles ; ce ne sont pas des monstres. En français, il y a des emprunts lexicaux, selon un processus d’appropriation lent, graduel. Dans « Je ne vais pas te spoiler ta série », spoiler n’est pas un verbe anglais : c’est un verbe français du premier groupe, terminé par -er. Surtout, défions un anglophone de reconnaitre « son » verbe spoil lorsqu’un francophone le prononce. La façon dont il le prononce l’a déjà rendu autre. À quel moment un mot cesse-t-il d’être anglais et devient-il français ? Spoiler est-il plus anglais que weekend ? Weekend est devenu un nom français avec un genre masculin, alors que l’anglais ne connait pas de genre grammatical. La lecture nationaliste d’un mot est un contresens, car elle néglige l’histoire de la langue. Nous naissons à un moment donné dans une ou plusieurs langues, en oubliant qu’on les reçoit en héritage, qu’elles sont le produit d’une riche et complexe réalité, constituée au fil des siècles, la réalité de ce qui se passe quand des langues sont en contact.</p>
+       <h4>Deux langues cousines restées en contact</h4>
+       <p>L’anglais et le français sont des langues cousines appartenant à la grande famille linguistique des langues indo-européennes. Comme l’italien, l’espagnol, l’allemand, le russe, mais aussi le persan ou l’hindi. Après l’arrivée de Guillaume le Conquérant sur le trône anglais, au XIe siècle, ces deux langues ont cohabité pendant plus de trois siècles. On estime à près de la moitié la part du lexique anglais empruntée à l’ancien français ou au normand. Si l’on tient au terme « franglais », il convient bien mieux à l’anglais qu’au français ! Ainsi « spoiler », par exemple, vient en fait du français espoillier, du latin spoliare. « Notre » verbe « spolier », proche par le sens, ne s’emploie pas dans le même contexte. Si l’on retient un mot, c’est qu’il nous apporte quelque chose (une nuance sémantique, un contexte). La langue a le sens pratique, elle emprunte pour s’enrichir. Ainsi le follower se rencontre sur les réseaux sociaux, mais les clubs de sport ou les magazines ont des abonnés, pas des followers ; faire du shopping n’est pas la même chose que faire les courses. Même au Canada, où les francophones sont le plus exposés à l’anglais, la recherche linguistique montre que la langue d’accueil (le français) n’est pas altérée par les emprunts, qu’elle incorpore et digère sans problème. Le contact entre les langues ressemble davantage à un jeu à somme positive qu’à une guerre : ce que « gagne » l’une, l’autre ne le perd pas. De même que le vocabulaire de chacune est illimité : les mots ajoutés (par emprunt) ne remplacent pas les mots existants, ils permettent d’apporter une nuance de sens.</p>
+       <h4>La visibilité de l’anglais dans l’espace public</h4>
+       <p>Alimentant les discours puristes anti-« franglais », fustigés dans le rapport de l’Académie française publié en février 2022, et très visibles dans l’espace public, il y a tous ces jeux avec l’anglais qu’affichent les slogans publicitaires de type « Ouigo » ou « Made in France ». Ce genre de communication s’adresse à une cible, une target. Si nos communicants, qui veulent frapper les esprits, souffrent peut-être de jeunisme, cet excès, bien que visible, n’est pas représentatif du français vraiment parlé par la plupart (y compris les jeunes) qui n’incorpore qu’une dose limitée d’emprunts. Du point de vue de la grammaire, mis à part quelques rares calques et quelques cas où l’ordre des mots autour du nom s’est inversé (certains noms propres comme « Montreux Jazz Festival » pour Festival de jazz de Montreux, ou slogans comme « bus attitude » pour attitude dans le bus), où il s’agit toujours de retenir l’attention, les langues gardent leur spécificité. On n’est pas près de boire une chaude eau avec un maison gâteau (un gâteau maison).</p>
+       <h4>Les langues vivantes bougent</h4>
+       <p>Le mélange, l’impur sont signes de vitalité pour une langue. Le séparé, le pur, une vue de l’esprit, un idéal, une langue statufiée. La langue se renouvèle d’abord parce que le monde change et qu’il faut le nommer, pour le meilleur et pour le pire (« covid » est-il un mot anglais ou français ?), mais aussi par besoin expressif, par jeu, pour faire place aux jeunes, aux autres, à l’altérité. Nombreux sont les anglicismes à avoir été détrônés. Aujourd’hui, pour dire que c’est cool, les jeunes disent que c’est frais, ou que c’est stylé. Les emprunts, agaçants ou sympathiques, sont souvent éphémères. Des commissions de terminologie (comme la Commission d’enrichissement de la langue française en France ou l’Office québécois de la langue française) travaillent à proposer des termes nouveaux, pour désigner des réalités nouvelles. Le français a ordinateur et confinement, là où l’italien a computer et lockdown. Les linguistes observent l’usage : certaines propositions sont adoptées par l’usage (logiciel pour software), d’autres non (pourriel pour spam), parfois l’usage hésite (divulgâcher pour spoiler). Plusieurs formes peuvent coexister (abonné et follower, interview, entrevue et entretien), avec des sens différents, et nous avons le choix. Comme l’anglais, qui a tant emprunté au français et qui se porte bien, le français est capable d’accueillir une infinité de synonymes.</p>
+       <h4>L’anglais comme langue dominante</h4>
+       <p>Bien sûr, l’anglais aujourd’hui est LA langue dominante à l’échelle planétaire, sur Internet ou sur le marché des traductions. C’est la langue des multinationales, des affaires, d’une bonne part de la science, mais aussi des chansons, des films à succès. Au XVIe siècle, c’était l’italien qui connotait le succès en Europe, et un certain Henri Estienne dénonçait le snobisme d’une cour de France italianisante. Et entre le Moyen Âge et le XVIIe siècle, le latin était la langue de la science et de la culture en Europe, sans que cela empêche les langues nationales de s’imposer progressivement et durablement, dans le droit et dans les faits, comme langues officielles. Il est possible que l’anglais soit amené à jouer le rôle du latin à l’échelle mondiale, dans un monde plurilingue. Mais il est possible aussi que les élites d’une culture cessent de transmettre leur langue et la pénalisent fortement, comme cela est arrivé à l’occitan ou au picard, progressivement remplacés par le français. C’est sur le statut des langues et du plurilinguisme qu’il faudrait débattre ; et non sur la concurrence entre spoiler et divulgâcher !
+       </p>
+       <h4>Et si ?</h4>
+       <p>Et si on enseignait l’histoire du français et de l’anglais, l’histoire des mots, la notion de contexte, de nuance sémantique ? Et si on expliquait que la concurrence entre langues est une concurrence entre groupes sociaux ? Et si on encourageait les traductions (du français vers l’anglais et de l’anglais vers le français) et le plurilinguisme, la diffusion des films majoritairement en VO à la télévision comme au cinéma ?
+       </p>
+       <h4>Ressources</h4>
+       <h5>- FranceTerme : le dictionnaire en ligne des propositions de la Commissiond’enrichissement de la langue française : [www.culture.fr/franceterme](www.culture.fr/franceterme)</h5>
+        <h5>- Le grand dictionnaire terminologique québécois (3 millions de mots) : [gdt.oqlf.gouv.qc.ca](gdt.oqlf.gouv.qc.ca)</h5>
+        <h5>- Louis-Jean Calvet & Alain Calvet, Les Confettis de Babel. Diversité linguistique et politique des langues, Éditions Écriture, 2013.</h5>
+        <h5>- Salvatore Digesto & Shana Polack, Le Français canadien, un français comme les autres. Tomber en amour ne vient donc pas de “to fall in love” ? Dommage !, France Forum, nouvelle série, no 65, avril 2017, p. 93-94.</h5>
+        <h5>- Romain Filstroff, Les Mots sont apatrides, Slatkine, 2023.</h5>
+        <h5>- Jean Pruvost, La Story de la langue française, Taillandier, 2020.</h5>
+        <h5>- Henriette Walter, Honni soit qui mal y pense, Robert Laffont, 2001.</h5>
+
+        <h3>4. Le français n’est pas réglementé par l’Académie française</h3>
+        <p>Idée reçue – L’Académie française fixe les règles de la languefrançaise en se fondant sur l’usage et sanctionne les mauvaisusages.
+
+          Citation – « La sphère politique a oublié qu’en France, c’est l’Académie française qui fixe, depuis 1635, les règles de l’usage du français. » Bernard Accoyer, élu UMP, automne 2012 ; propos issus de son blog et rapportés par différents médias, dont le Huffington Post, 24 janvier 2014.
+          
+          Dans les débats publics qui tournent autour de questions linguistiques (orthographe, féminisation, écriture inclusive, anglicismes), l’Académie française est souvent invoquée dans les médias pour jouer le rôle d’arbitre (« d’après l’Académie française… », « l’Académie dit que… », « selon les Immortels… »). On lui prête un rôle qu’elle n’a pas.</p>
+        <h4>L’Académie française a accompagné les évolutions de la langue jusqu’en 1835</h4>
+        <p>Fondée par Richelieu en 1634 pour renforcer le pouvoir royal en s’appuyant sur les grands écrivains de l’époque, l’Académie française a alors pour principale mission, comme l’indiquent ses statuts, de « travailler avec tout le soin et toute la diligence possibles à donner des règles certaines à notre langue et à la rendre pure, éloquente et capable de traiter les arts et les sciences ». Cependant, en défendant une conception qui confond langue et littérature, l’Académie française propose, surtout aujourd’hui, une vision trop souvent élitiste de la langue. Elle a pu, parfois, entériner avec bonheur des évolutions et a même contribué, notamment au XVIIIe siècle, à des réformes orthographiques. Mais depuis le XIXe siècle, elle ne suit plus l’évolution de la langue : elle s’est opposée à la réforme de l’orthographe prévue en 1901 pour accompagner l’accès de tous les enfants à l’école. Son Dictionnaire, seule production officielle actuelle, en est à peine à sa neuvième édition et n’est pas du tout à jour : ministre est dit nom masculin, mariage est défini comme l’union légitime d’un homme et d’une femme. Si l’Académie n’est pas à jour sur le vocabulaire, elle ne l’est pas non plus en grammaire. Sa seule Grammaire date de 1932 et a été tellement critiquée qu’elle n’a plus osé en publier d’autre.</p>
+        <h4>l’Académie française n’a aucun pouvoir sur la langue</h4>
+        <p>L’institution n’a pas de lien direct avec le ministère français de l’Éducation nationale et ne participe aucunement à l’élaboration des programmes scolaires de français, ni en France ni dans le reste de la francophonie. L’Académie n’édicte pas de loi, ni de circulaire elle-même, et ne peut aucunement sanctionner des usages linguistiques qui ne suivraient pas ses « recommandations ». Son seul pouvoir concret : autoriser la publication au Journal officiel de la République française de termes issus du travail des commissions ministérielles de terminologie, auxquelles elle participe. 
+
+          L’Académie française reconnait elle-même en 2019 que son Dictionnaire « n’a pas pour vocation de recenser la pluralité des usages en train de naître ou de se former, mais de dire le “bon usage” dès lors qu’il est établi et consacré ». L’usage, « bon » ou pas, ce sont les francophones qui, au quotidien, le fabriquent, le façonnent, le font évoluer. Les changements ne sont jamais décrétés par les dictionnaires : selon leur politique éditoriale, les dictionnaires les entérinent plus ou moins vite. Celui de l’Académie est le plus mince (32 000 mots dans sa huitième édition, la dernière complète à ce jour). Les francophones lui préfèrent largement les dictionnaires des maisons d’édition privées Larousse ou Robert, ou le Wiktionnaire collaboratif en libre accès, en prise directe avec les évolutions et intégrant de plus en plus les mots de toute la francophonie (60 000 mots pour le Petit Larousse ou le Petit Robert, 100 000 mots pour le Grand Robert, plus de 400 000 pour le Wiktionnaire). Rappelons que le vocabulaire est infini, et par définition bien des mots disponibles ne figurent pas dans les dictionnaires : beaucoup de noms propres, de mots en -ment, de mots en -able. La langue permet d’en créer sans limite : revaccinable par exemple.</p>
+        <h4>D’autres institutions travaillent sur la langue</h4>
+        <p>En France et en Afrique francophone, l’Académie française bénéficie d’une aura symbolique, d’un prestige que lui confèrent son ancienneté, son apparat (bâtiments, costumes, épées), ses membres (écrivains reconnus, politiques…). On yaccède sans aucune formation à la linguistique. Le travail sur le dictionnaire est réalisé par des agrégés de lettres dont le public ignore l’identité. Il en est de même pour sa rubrique « Dire, ne pas dire », mise à jour de manière très inégale. Elle a ainsi préconisé en juillet 2020 de ne pas utiliser les mots distanciel et présentiel sous prétexte qu’ils seraient des anglicismes. Ce qu’ils ne sont pas…
+
+          Les pays francophones du Nord n’accordent de toutes façons aucun crédit à l’Académie de la France et ont leurs propres institutions qui effectuent un travail d’aménagement linguistique professionnel en prise avec les besoins des communautés : l’Office québécois de la langue française, le Conseil des langues et des politiques linguistiques de la Fédération Wallonie Bruxelles, la Délégation à la langue française en Suisse. En France, c’est davantage la Délégation générale à la langue française et aux langues de France (DGLFLF) qui travaille sur l’évolution du vocabulaire. Dépendante du ministère de la Culture, elle s’intéresse au français dans sa diversité et en contact avec les autres langues de France (au sens large du terme, jusque dans les territoires d’outre-mer et les langues d’immigration). Elle travailleen lien étroit avec des linguistes, publie des études, des rapports, propose un « observatoire des pratiques linguistiques » et finance le Dictionnaire des francophones (plus de 500 000 mots), qui s’appuie lui-même sur le dictionnaire collaboratif en ligne et en libre accès Wiktionnaire, continuellement mis à jour. 
+          
+          En définitive, qui a le pouvoir sur la langue ? Toutes celles et ceux qui la parlent. Notons que la langue anglaise, si présente dans le monde, ne dispose pas d’institution de type « académie ».</p>
+      
+        <h4>Et si ?</h4>
+        <p>Et si l’Académie française élisait pour moitié des linguistes, en s’inspirant de l’Académie royale de langue et de littérature françaises de Belgique ? Et si on créait un véritable Collège des francophones, avec des personnes issues des différentes régions francophones ? Et si on proposait plus systématiquement à l’école (au collège par exemple) une introduction à la lexicographie afin de sensibiliser les élèves aux dictionnaires et de leur faire rédiger une entrée de dictionnaire ?</p>
+        <h4>Ressources</h4>
+        <h5>- Création d’un Collège des francophones proposée par OPALE (Organisme francophone de politique et d’aménagement linguistique): www.reseau-opale.org/Resolutions/Resolutions/Les-resolutions-du-reseau-OPALE</h5>
+         <h5>- Christophe Benzitoun, Qui veut la peau du français ?, Le Robert, 2021.</h5>
+         <h5>- Laélia Véron & Maria Candea, Parler comme jamais. La langue, ce qu’on croit et ce qu’on en sait, Le Robert, 2021 [en particulier le chapitre « Votre dictionnaire est-il de gauche ou de droite ? »].</h5>
+         <h5>- Éliane Viennot, Maria Candea, Yannick Chevallier, Sylvie Duverger, Anne-Marie Houdebine, L’Académie contre la langue française. Le dossier« féminisation », Éditions IXe, 2016.</h5>
+         <h5>- Chaine Youtube Linguisticae, La VÉRITÉ sur l’Académie française,mise en ligne en 2019 : www.youtube.com/watch?v=hfUsGmcr1PI</h5>
+        
+        <h3>5. Le français n’a pas une orthographe parfaire</h3>
+        <p>Idées reçues – Les francophones écrivent de plus en plus mal. L’orthographe, c’est la langue.
+
+          Citation – « La réforme de l’orthographe, c’est vraiment changer la langue en effaçant les traces. Comme s’il ne devait rien subsister du passé dans le présent. C’est une émeute des vivants contre les morts. » Alain Finkielkraut, de l’Académie française, émission L’Esprit de l’escalier, 7 février 2016. </p>
+        <h4>L’orthographe n’’est pas la langue</h4>
+        <p>Il ne faut pas confondre langue et orthographe. L’orthographe, c’est d’abord le code graphique qui permet de la transcrire. Elle permet à tous et à toutes de partager uncode graphique commun, qu’on considère comme le seul acceptable. Le mot orthographe est issu d’un emprunt au grec orthos qui signifie « droit », « correct ». L’orthographe, c’est l’écriture « correcte » de la langue. Ce terme ne se répand d’ailleurs qu’au XVIIe siècle, lorsqu’on décide de fixer la graphie du français. Avant cela, tout le monde écrit un peu comme il l’entend. L’orthographe des textes de Montaigneou Rabelais variait d’un imprimeur à l’autre. C’est l’école de la Troisième République qui va en répandre la pratique et l’assoir par la même occasion comme une norme sociale qu’on va progressivement confondre avec la faculté même d’écrire, voire avec la langue elle-même. 
+
+          Mais la complexité d’une phrase ou la subtilité d’un mot de vocabulaire n’a aucun rapport avec la difficulté de son orthographe. Sinon, le mot oeuf serait plus complexe et subtil que le mot paradigme. 
+          
+          Au-delà de sa fonction phonographique (transcrire des sons), l’orthographe peut également servir à marquer la morphologie, à travers les flexions verbales par exemple. Cette fonction permet de distinguer « ils mangent » de « il mange ». 
+          
+          L’orthographe contemporaine contient enfin des marques étymologiques empruntées à l’histoire du mot. Certaines ont été conservées du latin mais la plupart avaient disparu au Moyen Âge et ont été réintroduites au fil de l’histoire. Ces marques complexifient l’écriture mais permettent de créer des familles de mots (sang, sanguin, sanguinaire) et de distinguer certains homophones qui pourraient être confondus à la lecture (sang, sans, cent).
+          
+          Le problème, c’est que notre orthographe présente aujourd’hui un certain déséquilibre entre ces trois fonctions. À tel point qu’il est devenu pratiquement impossible d’écrire sans faire aucune faute. Et les francophones se toisent du haut de leur niveau de maitrise de l’orthographe, ce qui parait tout à fait incongru dans d’autres langues.
+          
+          Si notre orthographe est devenue si difficile d’accès, c’est parce qu’elle n’a pas été réformée (contrairement à ce quia été fait pour la plupart des langues européennes) depuis la sixième édition du Dictionnaire de l’Académie française en 1835. Cela fait presque deux siècles que toutes les tentatives successives de réforme ont échoué et la dernière en date, celle de 1990, peine à s’imposer dans les pratiques, bien qu’elle soit l’orthographe de référence officielle de la plupart des systèmes éducatifs francophones, y compris de l’Éducation nationale française depuis 2008.
+          
+          Si notre orthographe ne parvient pas à faire peau neuve, c’est parce qu’elle est devenue un marqueur social extrêmement puissant qui donne l’illusion de pouvoir juger des facultés linguistiques de quelqu’un sans entrer dans la complexité de la syntaxe, du vocabulaire ou de tout ce qui constitue la véritable qualité d’un texte écrit.</p>
+        <h4> L’orthographe française n’’est pas toujours logique ni étymologique</h4>
+        <p>Selon Paul Valéry, l’orthographe française va du « cocasse » à l’« absurde ». Elle n’a pas été conçue avec un plan d’ensemble, comme un jardin à la française. Son état actuel résulte plutôt d’une succession d’ajustements, comme nénufar (mot arabe d’origine perse) devenu nénuphar en 1935 dans le Dictionnaire de l’Académie française. Or, comme pour nénuphar, bon nombre d’explications étymologiques qui ont dirigé notre orthographe sont fallacieuses. Bonheur, malheur ne viennent pas du latin hora (dont dérive heure), mais deaugurium (« chance »), qui a donné heur (comme dans Je n’ai pas eu l’heur de lui plaire). Leur h n’est donc pas historique. Dompter vient du latin domitare, qui ne contient pas de p. Forcené est indépendant de force : il est relatif à quelqu’un qui est en dehors (for) du sens (sen-). Le c n’est pas d’origine. Legs appartient à la famille de laisser (sans g), pas de léguer. Poids a été rattaché indument au latin pondus, alors qu’il vient du latin pensum, sans d. Posthume n’a rien à voir avec humus (sinon que son orthographe fait penser à enterrer), il dérive du latin postumus, superlatif de posterus. Le h n’adonc pas de raison d’être. Asile, abime, cime, cristal s’écrivent avec un i, alors que leur ancêtre comportait un y (asylum, abyssus, cyma, crystallus). Mais lacrymal, lys transforment un i latin en y (lacrima, lilium, hic). Le χ (khi) grec est transcritpar c dans acariâtre, caméléon, caractère, carte, colère, colique, corde, cristal, école, estomac, mécanique, mélancolie. Mais par ch dans archaïsme, archange, chaos, chlore, chœur, choléra (qui a le même ancêtre que colère), chrétien, chrome, chronique, chrysalide. Aspect, respect, suspect ont gardé de leur origine un c muet. Mais pas objet, préfet, projet, sujet, rejet. 
+
+          De même, tous les pluriels en x, comme bateaux, neveux ou même hiboux, n’ont rien d’étymologique. Ils proviennent d’une erreur de recopiage. Les moines copistes utilisaient une abréviation pour le -us final très fréquent en latin : le signe ꝸ. On a progressivement confondu cette abréviation avec la lettre x et on a ajouté un u pour que cela corresponde à la prononciation. Ces choix graphiques ne se justifient ni par la prononciation, ni par le souci de distinguer des homophones comme dans père/paire. Leur mémorisation est donc le seul moyen efficace de les apprendre. Ils ne laissent pas de place à un réel raisonnement. Pire, ils biaisent ce raisonnement en ne s’alignant pas sur des principes généraux enseignables.</p>
+        <h4>Les jeunes n’écrivent pas de plus en plus mal…</h4>
+        <p>L’idée d’une décadence du français est loin d’être récente. En 1909, l’académicien Émile Faguet prétendait que tous les professeurs et examinateurs étaient d’accord sur le fait que les jeunes Français écrivaient mal. Il n’y a, en réalité, jamais eu d’âge d’or de l’orthographe où une majorité de la population en connaissait les subtilités. Ce qui donne aujourd’hui l’illusion d’une dégradation, c’est qu’il existe une myriade descripteurs amateurs, qui écrivent directement sans être relus et que ces productions sont aujourd’hui à la vue de tout le monde (voir point 6). Bref, l’écriture s’est démocratisée, et ne passe plus toujours par le filtre d’éditeurs, de correcteurs, d’imprimeurs, contrairement aux époques antérieures. Mais si l’écriture s’est démocratisée, il n’en va pas de même de l’orthographe.
+        </p>
+        <h4>…Mais la maitrise de l’orthographe régresse</h4>
+        <p>Nous ne sommes pas tous et toutes égaux face à l’orthographe. La recherche a montré que l’activité de lecture personnelle permettait d’améliorer le niveau d’orthographe chez certains élèves mais pas chez d’autres. Sans même aborder la question de la dyslexie, nos cerveaux n’ont pas tous le même rapport à la graphie, et nous ne pouvons donc pas conclure que lire serait le seul moyen efficace d’acquérir l’orthographe.
+
+          Alors que faire ?
+          
+          Depuis des décennies, le nombre d’heures consacrées à l’enseignement de l’orthographe diminue régulièrement. À l’école primaire, l’année scolaire a été réduite d’environ un tiers en un siècle et les matières enseignées se sont fortement diversifiées : langues étrangères, informatique, etc. Il manque donc des centaines d’heures pour pouvoir enseigner l’orthographe française convenablement à tous les élèves. 
+          
+          Dans le contexte actuel, l’enseignement de la complexité de l’orthographe est donc une véritable gageüre. À l’école, elle occupe un temps considérable au détriment d’autres matières essentielles et pour un niveau dont tout le monde se plaint. Le niveau de compréhension et de lecture des francophones s’en ressent, comme en attestent toutes les études internationales (PISA).</p>
+        <h4>Il faut moins de dictées</h4>
+        <p>Quand Pap Ndaye, ministre de l’Éducation nationale, tout comme Jean-Michel Blanquer avant lui, a réagi aux mauvais résultats en compréhension des petits Français aux études PISA, il a déclaré : « La dictée, la dictée quotidienne doitcdevenir une réalité dans nos écoles primaires. » Mais comment la dictée pourrait-elle améliorer la compréhension ? 
+
+          La dictée est souvent présentée comme un exercice permettant d’apprendre à écrire sans faute. Mais, les spécialistes de l’éducation l’ont bien montré, on n’apprend pas en faisant apparaitre des fautes. On apprend en montrant des règles. En 1880, Jules Ferry, considéré comme le père fondateur de la démocratisation de l’école, tentait déjà, en vain, de réduire la place de la dictée pour justement travailler plus la compréhension : « […] à la dictée – à l’abus de la dictée – il faut substituer un enseignement plus libre, plus vivant et plus substantiel […] épargnons ce temps si précieux qu’on dépense trop souvent dans les vétilles de l’orthographe, dans les règles de la dictée qui font de cet exercice une manière de tour de force et une espèce de casse-tête chinois. » (Jules Ferry, discours au Congrès pédagogique, 2 avril 1880).
+          
+          Il est en effet essentiel d’apprendre le sens des mots, la grammaire des constructions, plutôt que des centaines de pièges orthographiques. Dès les débuts de la généralisation de l’instruction, on a questionné l’efficacité de la dictée. Il existe aujourd’hui une multitude de techniques pour améliorer la maitrise de l’orthographe, qui s’éloignent des méthodes traditionnelles souvent inefficaces et décourageantes. Les chercheurs en didactique proposent par exemple d’évaluer en pourcentage de formes correctes plutôt qu’avec le bon vieux « un point par faute », d’éviter d’enseigner ensemble les homophones grammaticaux ou lexicaux (qui ont tendance à créer des confusions dans la tête des élèves là où il n’y en avait pas), de pratiquer un enseignement plus explicite ou d’entamer plus systématiquement une réflexion sur la nature des erreurs commises.
+          
+          Au Québec, les étudiants en première année à l’université ne font pas de dictée : ils apprennent à se servir du logiciel Antidote. Si les étudiants français, et même les candidats au baccalauréat peuvent utiliser la calculatrice en sciences, pourquoi ne pas autoriser les correcteurs d’orthographe en lettres ? Les situations de la vie privée ou professionnelle dans lesquelles nous ne pouvons pas utiliser de correcteur ont presque disparu.</p>
+        <h4>Réformer l’orthographe est un nivèlement par le haut</h4>
+        <p>Rappelons tout d’abord que les Rectifications de 1990 nemettent pas la langue en danger et ne concernent qu’un nombre très restreint de formes (un mot toutes les deux pages en moyenne). Il s’agit en fait d’une mise à jour et d’une rationalisation ; la simplification en sera la conséquence, et non la cause ! Mise à jour d’une graphie plus conforme à la prononciation (ognon, évènement – comme cela s’est produit pour collége dont l’accent a été changé en 1878), suppression des î et û inutiles, systématisation (portemonnaie soudé comme portefeuille, charriot avec deux r comme charrette) et généralisation (pluriel en -s pour la plupart des noms composés (un après-midi, des après-midis)… Cette réforme n’est pas une résignation à une baisse de niveau mais bien une amélioration de notre système graphique dont l’application entrainerait une plus grande accessibilité de la langue écrite.
+
+          Les réformes à venir, réclamées par la Fédération internationale des professeurs de français, sont connues et étudiées (notamment par le groupe ÉROFA) : rationalisation des consonnes doubles, dépénalisation de l’invariabilité des participes passés avec l’auxiliaire avoir, passage de x à s pour les pluriels irréguliers. Leur nécessité est défendue par une grande partie de la communauté scientifique même si leur rythme doit être progressif pour éviter les modifications trop brusques qui risqueraient de diminuer la vitesse de lecture et pour faciliter leur intégration par l’usage.</p>
+        <h4>Et si ?</h4>
+        <p>Et si on revoyait la place de l’orthographe en tant qu’outil de sélection ? Si on régularisait davantage l’orthographe en commençant par appliquer les Rectifications de 1990 ? Et si on autorisait les correcteurs automatiques aux examens comme les calculatrices en maths ou en physique ?</p>
+        <h4>Ressources</h4>
+        <h5>- Nina Catach, L’Orthographe française, 5e édition, Armand Colin, 1985.
+          <h5>- André Chervel, L’Orthographe en crise à l’école. Et si l’histoire montraitle chemin ? Retz, 2008.</h5>
+          <h5>- Arnaud Hoedt & Jérôme Piron, La Faute de l’orthographe : la convivialité, Textuel, 2017.</h5>
+          <h5>- Georges Legros & Marie-Louise Moreau, Orthographe : qui a peur de la réforme ?, Ministère de la Fédération Wallonie-Bruxelles, 2012 [en ligne].</h5>
+          <h5>- Danièle Manesse, Danièle Cogis, Michèle Dorgan & Christine Tailler, Orthographe : à qui la faute ?, ESF, 2007.</h5>
+          <h5>- Benoît Melançon, Le Niveau baisse ! (et autres idées reçues sur la langue), Montréal, Del Busso éditeur, 2015.</h5>
+          <h5>- Liste des mots à l’orthographe rectifiée : www.renouvo.org/liste.php</h5>
+          <h5>- Site de l’ÉROFA, Études pour la Rationalisation de l’Orthographe Française d’Aujourd’hui : erofa.free.fr</h5>
+       
+        <section class="conclusion"> 
+          <h3>Crédits :</h3>
+         <h6>Anne Abeillé</h6><m>– Professeure de Linguistique à l’Université Paris Cité, membre du Laboratoire de Linguistique formelle-CNRS, codirectrice de la Grande Grammaire du français, spécialiste de syntaxe.</m>
+         <h6>Julie Auger</h6><m>– Professeure titulaire de Linguistique à l’Université de Montréal, spécialiste de variation sociolinguistique, français québécois et picard.</m>
+         <h6>Christophe Benzitoun</h6><m>– Maitre de conférences en Linguistique française à l’Université de Lorraine et à l’ATILF, membre du comité éditorial de l’Encyclopédie grammaticale du français.</m>
+         <h6>Heather Burnett</h6><m>– Directrice de recherches au CNRS, membre du Laboratoire de Linguistique formelle, spécialiste de sémantique et pragmatique.</m>
+         <h6>Maria Candea</h6><m>– Professeure de Sociolinguistique et Linguistique françaiseà l’Université Sorbonne Nouvelle, membre du laboratoire CLESTHIA, spécialiste de sociophonétique.</m>
+         <h6>Françoise Gadet</h6><m>– Professeure émérite à l’Université Paris Nanterre, membre du Laboratoire Modyco-CNRS, spécialiste de syntaxe et sociolinguistique.</m>
+         <h6>Médéric Gasquet-Cyrus</h6><m>– Maitre de conférences à l’Université d’Aix-Marseille, membre du Laboratoire Parole et Langage-CNRS, spécialiste des accents et du français de Marseille.</m>
+         <h6>Antoine Gautier</h6><m>– Maitre de conférences en Linguistique française àSorbonne Université.Arnaud Hoedt – Licencié en Langue et Littératures romanes de l’Université Libre de Bruxelles, auteur et comédien, membre du Conseil des langues et des politiques linguistiques de la Fédération Wallonie Bruxelles.</m>
+         <h6>Jean-Marie Klinkenberg</h6><m>– Professeur émérite de l’Université de Liège (Chaire de sémiotique et rhétorique), membre de l’Académie royale deBelgique.</m>
+         <h6>Michel Launey</h6><m>– Professeur honoraire de l’Université Denis-Diderot et directeur de recherches honoraire à l’Institut de Recherche pour le Développement IRD-Guyane.</m>
+         <h6>Julie Neveux</h6><m>– Maitresse de conférences en Linguistique anglaise àSorbonne Université, membre du CELISO (Centre de Linguistique enSorbonne), Présidente de la Société de Stylistique et d’Analyse de DiscoursAnglophones.</m>
+         <h6>Rachel Panckhurst</h6><m>– Professeure en Linguistique-Informatique à l’Université Paul-Valéry Montpellier 3, membre du laboratoire Dipralang, spécialiste des discours numériques.</m>
+         <h6>Jérôme Piron</h6><m>– Licencié en Langues et Littératures romanes de l’Université catholique de Louvain-La-Neuve, auteur et comédien, membre du Conseil des langues et des politiques linguistiques de la Fédération Wallonie Bruxelles.</m>
+         <h6>RF. Monté</h6><m>de Linguisticae, auteur, vidéaste et vulgarisateur en sociolinguistique et linguistique historique indo-européenne.</m>
+         <h6>Corinne Rossari</h6><m>– Professeure de Linguistique française à l’Université de Neuchâtel, spécialiste de sémantique et de pragmatique.</m>
+         <h6>Gilles Siouffi</h6><m>– Professeur à Sorbonne Université, spécialiste d’histoire du français.</m>
+         <h6>Laélia Véron</h6><m>– Maitresse de conférences en stylistique et langue française à l’Université d’Orléans, membre du laboratoire POLEN.</m>
+        
+        </section> 
+        
+        <h4>Conclusion</h4>
+        <p>À l’heure du soupçon, il y a deux attitudes possibles. Celle de la désillusion et du renoncement, d’une part, nourrie par le constat que le temps de la réflexion et celui de la décision n’ont plus rien en commun ; celle d’un regain d’attention, d’autre part, dont témoignent le retour des cahiers de doléances et la réactivation d’un débat d’ampleur nationale. Notre liberté de penser, comme au vraitoutes nos libertés, ne peut s’exercer en dehors de notre volonté decomprendre. 
+
+          Voilà pourquoi la collection « Tracts » fera entrer les femmes et les hommes de lettres dans le débat, en accueillant des essais en prise avec leur temps mais riches de la distance propre à leur singularité. Ces voix doivent se faire entendre en tous lieux, comme ce fut le cas des grands « tracts de la NRF » qui parurent dans les années 1930, signés par André Gide, Jules Romains, Thomas Mannou Jean Giono – lequel rappelait en son temps : « Nous vivons les mots quand ils sont justes. » 
+          
+          Puissions-nous tous ensemble faire revivre cette belle exigence.
+          
+          Antoine Gallimard
+          
+          
+          
+          Nous, linguistes de France, de Belgique, de Suisse, du Canada, sommes proprement atterrées par l’ampleur de la diffusion d’idées fausses sur la langue française.
+          
+          Les linguistes atterrées</p>
+        
+
+       <section>
+         <h4>Les discours sur les « fautes » saturent quasiment l’espace éditorial et médiatique contemporain. Mais la différence entre une faute et une évolution, c’est la place qu’elle occupera à long terme dans l’usage. Et l’usage, ça s’étudie avec minutie. C’est le travail des linguistes. Face aux rengaines déclinistes, il devient indispensablede rétablir la rigueur des faits. Non, l’orthographe n’est pas immuable en français. Non, les jeunes, les provinciaux ou les Belges ne « déforment » pas la langue. Oui, le participe passé tend à devenir invariable. Non, le français n’appartient pas à la France. Oui, tout le monde a un accent, voire plusieurs. Dix idées reçues sur la langue, et surtout trente propositions pour en sortir.
+
+          Collectif de linguistes : [tract-linguistes.org](https://www.tract-linguistes.org/)
+          
+          Mai 2023</h4>
+        </section>
+
+
+
+
+
+
+      </section>
+      
+     <section class="back cover">
+
+     </section>
+
+    </template>
+
+  </body>
+</html>
